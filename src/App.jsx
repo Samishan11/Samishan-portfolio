@@ -11,9 +11,9 @@ function App() {
         targets={[".link", ".your-css-selector"]}
         customClass="custom-cursor"
         dimensions={50}
-        opacity ={0.5}
-        fill="#FCB900"
-        strokeColor={"#FCB900"}
+        opacity={0.5}
+        fill="#ff9301"
+        strokeColor={"#ff9301"}
         scale={0.1}
         smoothness={{
           movement: 0.05,
