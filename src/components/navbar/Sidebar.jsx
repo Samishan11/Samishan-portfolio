@@ -1,7 +1,7 @@
 import React from "react";
 const Sidebar = () => {
   return (
-    <div className="w-[80px] bg-gray-900 text-white text-center fixed top-0 left-0 h-screen">
+    <div className="w-[80px] border-r border-gray-600 bg-gray-900 text-white text-center fixed top-0 left-0 h-screen">
       <div className="logo bg-orange-500 py-5">
         <h1 className="font-extrabold text-4xl">ST</h1>
       </div>

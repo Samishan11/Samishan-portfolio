@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/navbar/Sidebar";
+import Biography from "../boi/Biography";
 
 import Introduction from "../intro/Introduction";
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       </div>
       <div className="pages w-full">
         <Introduction />
+        <Biography />
       </div>
     </div>
   )
