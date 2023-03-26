@@ -7,7 +7,7 @@ const Sidebar = () => {
       </div>
       <ul className="list-none text-center text-xl">
         <li className="pt-16 pb-5 border-b border-gray-600">
-          <i className="fa-solid fa-home"></i>
+          <i id="home" className="fa-solid text-orange-500 fa-home"></i>
         </li>
         <li className="py-5 border-b border-gray-600">
           <i className="fa-solid fa-user"></i>
