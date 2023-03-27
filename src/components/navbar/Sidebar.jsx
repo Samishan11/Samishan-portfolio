@@ -1,5 +1,15 @@
-import React from "react";
+import React ,{useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
+  const [targetElevemt, settargetElevemt] = useState("")
+  useEffect(() => {
+    window.document.getElementById("introduction") ? 
+    settargetElevemt("introduction") :
+    window.document.getElementById("biography") ?
+    settargetElevemt("biography")  : settargetElevemt('')
+    console.log(targetElevemt)
+  }, [window.innerHeight])
+  
   return (
     <div className="w-[80px] border-r border-gray-600 bg-gray-900 text-white text-center fixed top-0 left-0 h-screen">
       <div className="logo bg-orange-500 py-5">
@@ -7,22 +17,22 @@ const Sidebar = () => {
       </div>
       <ul className="list-none text-center text-xl">
         <li className="pt-16 pb-5 border-b border-gray-600">
-          <i className="fa-solid fa-home"></i>
+          <a href={"#introduction"}><i className={`fa-solid fa-home ${window.document.getElementById("introduction") === targetElevemt && 'text-orange-500'}`}></i></a>
         </li>
         <li className="py-5 border-b border-gray-600">
-          <i className="fa-solid fa-user"></i>
+          <a href={'#biography'}><i className={`fa-solid fa-user ${window.document.getElementById("biography") === targetElevemt && 'text-orange-500'}`}></i></a>
         </li>
         <li className="py-5 border-b border-gray-600">
-          <i class="fa-solid fa-file"></i>
+          <Link><i class="fa-solid fa-file"></i></Link>
         </li>
         <li className="py-5 border-b border-gray-600">
-          <i class="fa-solid fa-briefcase"></i>
+          <Link><i class="fa-solid fa-briefcase"></i></Link>
         </li>
         <li className="py-5 border-b border-gray-600">
-          <i className="fa-solid fa-blog"></i>
+          <Link><i className="fa-solid fa-blog"></i></Link>
         </li>
         <li className="py-5">
-          <i className="fa-solid fa-phone-volume"></i>
+          <Link><i className="fa-solid fa-phone-volume"></i></Link>
         </li>
       </ul>
     </div>

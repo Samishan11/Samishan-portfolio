@@ -2,7 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
+
+:root {
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
