@@ -5,7 +5,7 @@ const Introduction = () => {
   const { darktheme, setDarkTheme } = useContext(ThemeContext);
   return (
     <div id="introduction"
-      className={`home relative flex h-[85vh] md:block md:h-screen justify-center items-center flex-col`}
+      className={`home relative flex h-[60vh] md:block md:h-screen justify-center items-center flex-col`}
     >
       <div className="header hidden md:flex justify-between pt-9 px-4 text-md pb-20">
         <div className="touch">

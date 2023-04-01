@@ -17,3 +17,10 @@
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 1275px) and (min-width: 767px)  {
+    .circular_avatar {
+      height: 100%;
+      width: 100%;
+    }
+}
