@@ -1,11 +1,11 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from "../../context/themeContext";
 const Biography = () => {
-    const {darktheme, setDarkTheme} = useContext(ThemeContext);
+    const { darktheme, setDarkTheme } = useContext(ThemeContext);
     return (
-        <div id='biography' className={` ${darktheme ? 'bg-gray-900' : 'bg-gray-100'} bio_section pb-24 pt-10 md:mt-24 mt-20`}>
+        <div id='biography' className={` ${darktheme ? 'bg-gray-900' : 'bg-gray-100'} bio_section pb-24 pt-36 lg:pt-0 sm:pt-40 md:pt-0`}>
             <div className="section block md:flex">
-                <div className="circular_profile flex justify-center items-center w-full md:w-2/4 mx-auto">
+                <div className="circular_profile flex justify-center sm:justify-center px-16 items-center w-full md:w-2/5 mx-auto">
                     <div data-aos="fade-up" className="circular_avatar text-center relative  w-[300px] h-[300px] border-[5px] border-orange-500 rounded-full md:w-[350px] md:h-[350px] bg-red-500 flex flex-col">
                         <img className="circular_avatar bg-cover object-cover rounded-full bg-red-500 min-w-full" src={'https://avatars.githubusercontent.com/u/60726548?v=4'} alt="home" />
                         <div className="icons">
@@ -32,10 +32,10 @@ const Biography = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200" className="about text-left mt-36 w-4/5 mx-auto md:w-2/4 pr-10">
-                    <h1 className='text-3xl  font-black mb-10'>Biography</h1>
+                    <h1 className='text-3xl  font-black mb-5'>Biography</h1>
                     <span className=' text-md md:text-[14px]'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</span>
-                    <p className='mt-10 text-md  md:text-[14px]'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
-                    <div className="info mt-10 flex flex-col md:flex-row justify-end w-full">
+                    <p className='mt-5 text-md  md:text-[14px]'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
+                    <div className="info mt-5 flex flex-col md:flex-row justify-end w-full">
                         <div className="left w-full md:w-2/4">
                             <p> <span className=' font-semibold'>Name:</span> <span className='ml-1 text-gray-400'>Samishan Thapa</span> </p>
                             <p className='mt-2'><span className='font-semibold'>Birthday:</span> <span className='ml-1 text-gray-400'>16th September 2000</span> </p>
@@ -51,9 +51,30 @@ const Biography = () => {
                     </div>
                 </div>
             </div>
-            <div className="what-id-do mt-20 w-4/5 mx-auto">
+            <div className="what-id-do mt-20 w-full px-20 mx-auto">
                 <div className="title">
                     <h1 className='text-2xl font-black'>WHAT I DO?</h1>
+                </div>
+                <div className="boxes flex flex-wrap justify-center sm:justify-center md:justify-center lg:justify-start mt-16 items-center gap-5">
+                    <div data-aos="fade-right" data-aos-duration="500" className="box rounded-2xl h-[300px] w-[350px] bg-black"> 
+                    <div className="info px-8">
+                        <h5 className='text-xl font-black'>Web Design</h5>
+                        <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000" className="box rounded-2xl h-[300px] w-[350px] bg-black"> 
+                    <div className="info px-8">
+                        <h5 className='text-xl font-black'>Web Design</h5>
+                        <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1500" className="box rounded-2xl h-[300px] w-[350px] bg-black"> 
+                    <div className="info px-8">
+                        <h5 className='text-xl font-black'>Web Design</h5>
+                        <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                   
                 </div>
             </div>
         </div>

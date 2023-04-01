@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/themeContext";
 const Introduction = () => {
-  const {darktheme, setDarkTheme} = useContext(ThemeContext);
+  const { darktheme, setDarkTheme } = useContext(ThemeContext);
   return (
     <div id="introduction"
-      className={`home flex h-[85vh] md:block md:h-auto justify-center items-center flex-col`}
+      className={`home relative flex h-[85vh] md:block md:h-screen justify-center items-center flex-col`}
     >
       <div className="header hidden md:flex justify-between pt-9 px-4 text-md pb-20">
         <div className="touch">
@@ -22,11 +22,10 @@ const Introduction = () => {
             samishanthapa0@gmail.com
           </Link>
         </div>
-      
       </div>
       <div className={`w-full md:mx-auto mt-20 h-auto`}>
-        <div className="intro md:mx-auto w-4/5">
-          <div data-aos="fade-up" className="intro_desc relative z-10 ml-5">
+        <div className="intro md:mx-auto w-full px-16">
+          <div data-aos="fade-up" data-aos-duration="1000" className="intro_desc z-10 ml-5">
             <span className="text-xl font-semibold">Hello, My name is </span>
             <h1
               style={{ fontFamily: "Rubik, sans-serif" }}
@@ -47,12 +46,12 @@ const Introduction = () => {
               specializing in creating stylish, modern websites, web services
               and online stores.
             </p>
-            <button className={` ${darktheme?'bg-white text-black ':'bg-gray-900 text-white '} rounded px-5 py-2 font-bold`}>
+            <button className={` ${darktheme ? 'bg-white text-black ' : 'bg-gray-900 text-white '} hover:-translate-y-2 transition duration-500 ease-in-out rounded px-5 py-2 font-bold`}>
               Download CV
             </button>
           </div>
-          <div className="banner_"></div>
         </div>
+        <div className="banner_"></div>
       </div>
     </div>
   );

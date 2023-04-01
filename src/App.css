@@ -1,18 +1,19 @@
 .banner_ {
     position: absolute;
-    top: 0;
     right: 0;
-    height: 100vh;
-    width: 50vw;
+    top: 0;
     background: url('../src/assets//home-banner.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    width: 50vw;
 }
 
 @media only screen and (max-width:768px) {
     .banner_ {
         opacity: .4;
         width: 102vw;
+        height: 100%;
     }
 }
