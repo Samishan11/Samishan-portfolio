@@ -11,3 +11,34 @@
 html {
   scroll-behavior: smooth;
 }
+
+.what-id-do .title {
+  position: relative;
+}
+
+.what-id-do .title h1::after {
+  position: relative;
+}
+
+.what-id-do .title h1::after {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background: #d47901;
+  border-radius: 50%;
+  top: 0;
+  left: -10px;
+  opacity: .6;
+  animation: animi 3s linear infinite;
+
+}
+
+@keyframes animi {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+}

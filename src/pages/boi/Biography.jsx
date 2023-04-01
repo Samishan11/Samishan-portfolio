@@ -1,56 +1,62 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import img from "../../assets/about-me.jpg"
+import React, {useContext} from 'react';
+import { ThemeContext } from "../../context/themeContext";
 const Biography = () => {
+    const {darktheme, setDarkTheme} = useContext(ThemeContext);
     return (
-        <div id='biography' className="bio_section pb-24 block sm:flex sm:mt-24 bg-gray-900 mt-20">
-            <div className="circular_profile flex justify-center items-center w-full sm:w-2/4 mx-auto">
-                <div data-aos="fade-up" className="circular_avatar text-center relative  w-[250px] h-[250px] border-[5px] border-orange-500 rounded-full sm:w-[350px] sm:h-[350px] bg-red-500 flex flex-col">
-                    <img className="circular_avatar bg-cover object-cover rounded-full bg-red-500" src={img} alt="home" />
-                    <div className="icons">
-                        <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[10px] bg-black left-[15%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
-                            <i className="fa-brands fa-facebook-f "></i>
+        <div id='biography' className={` ${darktheme ? 'bg-gray-900' : 'bg-gray-100'} bio_section pb-24 pt-10 md:mt-24 mt-20`}>
+            <div className="section block md:flex">
+                <div className="circular_profile flex justify-center items-center w-full md:w-2/4 mx-auto">
+                    <div data-aos="fade-up" className="circular_avatar text-center relative  w-[300px] h-[300px] border-[5px] border-orange-500 rounded-full md:w-[350px] md:h-[350px] bg-red-500 flex flex-col">
+                        <img className="circular_avatar bg-cover object-cover rounded-full bg-red-500 min-w-full" src={'https://avatars.githubusercontent.com/u/60726548?v=4'} alt="home" />
+                        <div className="icons">
+                            <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[10px] bg-black left-[15%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
+                                <i className="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-12px] bg-black left-[30%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
+                                <i className="fa-brands fa-instagram "></i>
+                            </div>
+                            <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-18px] bg-black left-[45%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
+                                <i className="fa-brands fa-twitter "></i>
+                            </div>
+                            <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-10px] bg-black right-[30%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
+                                <i className="fa-brands fa-linkedin-in "></i>
+                            </div>
+                            <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[10px] bg-black right-[15%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
+                                <i className="fa-brands fa-github "></i>
+                            </div>
                         </div>
-                        <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-12px] bg-black left-[30%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
-                            <i className="fa-brands fa-instagram "></i>
-                        </div>
-                        <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-18px] bg-black left-[45%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
-                            <i className="fa-brands fa-twitter "></i>
-                        </div>
-                        <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[-10px] bg-black right-[30%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
-                            <i className="fa-brands fa-linkedin-in "></i>
-                        </div>
-                        <div className="icon border-[2px] absolute hover:bg-orange-500 hover:scale-110 transition bottom-[10px] bg-black right-[15%] text-white h-[35px] w-[35px] flex justify-center items-center rounded-full">
-                            <i className="fa-brands fa-github "></i>
+                        <div className="name mt-10">
+                            <span>Software Developer</span>
+                            <h1 className='text-3xl font-bold mt-2'>Samishan Thapa</h1>
                         </div>
                     </div>
-                    <div className="name mt-10">
-                        <span>Software Developer</span>
-                        <h1 className='text-3xl font-bold mt-2'>Samishan Thapa</h1>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" className="about text-left mt-36 w-4/5 mx-auto md:w-2/4 pr-10">
+                    <h1 className='text-3xl  font-black mb-10'>Biography</h1>
+                    <span className=' text-md md:text-[14px]'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</span>
+                    <p className='mt-10 text-md  md:text-[14px]'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
+                    <div className="info mt-10 flex flex-col md:flex-row justify-end w-full">
+                        <div className="left w-full md:w-2/4">
+                            <p> <span className=' font-semibold'>Name:</span> <span className='ml-1 text-gray-400'>Samishan Thapa</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Birthday:</span> <span className='ml-1 text-gray-400'>16th September 2000</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Age:</span> <span className='ml-1 text-gray-400'>22</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Address:</span> <span className='ml-1 text-gray-400'>Kathmandu</span> </p>
+                        </div>
+                        <div className="right mt-2 md:mt-0 w-full md:w-2/4 md:ml-16">
+                            <p> <span className=' font-semibold'>Name:</span> <span className='ml-1 text-gray-400'>Samishan Thapa</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Birthday:</span> <span className='ml-1 text-gray-400'>16th September 2000</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Age:</span> <span className='ml-1 text-gray-400'>22</span> </p>
+                            <p className='mt-2'><span className='font-semibold'>Address:</span> <span className='ml-1 text-gray-400'>Kathmandu</span> </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="200" className="about text-center sm:text-left mt-20 w-full sm:w-2/4 pr-10">
-                <h1 className='text-3xl  font-black mb-10'>Biography</h1>
-                <span className='text-[14px'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</span>
-                <p className='mt-10 text-[14px'>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
-                <div className="info mt-10 flex w-full">
-                    <div className="right w-2/4">
-                        <p>Name: <span className='text-sm'>Samishan Thapa</span> </p>
-                        <p>Birthday: <span className='text-sm'>16th September 2000</span> </p>
-                        <p>Age: <span className='text-sm'>22</span> </p>
-                        <p>Address: <span className='text-sm'>Kathmandu</span> </p>
-                    </div>
-                    <div className="right w-2/4">
-                        <p>Name: <span className='text-sm'>Samishan Thapa</span> </p>
-                        <p>Birthday: <span className='text-sm'>16th September 2000</span> </p>
-                        <p>Age: <span className='text-sm'>22</span> </p>
-                        <p>Address: <span className='text-sm'>Kathmandu</span> </p>
-                    </div>
+            <div className="what-id-do mt-20 w-4/5 mx-auto">
+                <div className="title">
+                    <h1 className='text-2xl font-black'>WHAT I DO?</h1>
                 </div>
             </div>
         </div>
     )
-}
-
-export default Biography
+};
+export default Biography;
