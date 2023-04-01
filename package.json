@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "cursor-dot": "^1.0.5",
     "custom-cursor-react": "^1.0.5",
     "framer-motion": "^10.9.1",
     "react": "^18.2.0",
