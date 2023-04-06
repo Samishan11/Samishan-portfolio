@@ -56,21 +56,21 @@ const Biography = () => {
                     <h1 className='text-2xl font-black'>WHAT I DO?</h1>
                 </div>
                 <div className="boxes flex flex-wrap justify-center sm:justify-center md:justify-center lg:justify-start mt-16 items-center gap-5">
-                    <div data-aos="fade-right" data-aos-duration="500" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[350px]`}>
+                    <div data-aos="fade-right" data-aos-duration="500" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}>
                         <div className="info px-8">
-                            <h5 className='text-xl font-black'>Web Design</h5>
+                            <h5 className='text-xl font-black'>Website Development</h5>
                             <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1000" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[350px]`}>
+                    <div data-aos="fade-right" data-aos-duration="1000" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}>
                         <div className="info px-8">
-                            <h5 className='text-xl font-black'>Web Design</h5>
+                            <h5 className='text-xl font-black'>Mobile App</h5>
                             <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1500" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[350px]`}>
+                    <div data-aos="fade-right" data-aos-duration="1500" className={` ${darktheme ? 'bg-black' : 'bg-gray-200 shadow'} box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}>
                         <div className="info px-8">
-                            <h5 className='text-xl font-black'>Web Design</h5>
+                            <h5 className='text-xl font-black'>UI/UX</h5>
                             <p className='text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>

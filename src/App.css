@@ -10,6 +10,9 @@
     width: 50vw;
 }
 
+#introduction{
+    height: 100vh;
+}
 @media only screen and (max-width:768px) {
     .banner_ {
         opacity: .4;
