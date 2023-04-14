@@ -67,6 +67,7 @@ const Work = () => {
     </div>
   );
 };
+
 const Bio = () => {
   return (
     <div className="section block md:flex">
