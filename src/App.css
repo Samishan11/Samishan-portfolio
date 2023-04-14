@@ -10,6 +10,40 @@
     width: 50vw;
 }
 
+#introduction{
+    height: 100vh;
+}
+.box{
+    transition: all 1s ease;
+}
+.icon_b{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+}
+.icon_b::after{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    content:"";
+    border-radius: 50%;
+    background-color:  #ffc107;
+    left: -25px;
+    top: -20px;
+    overflow: hidden;
+    /* transition: all 1s ease; */
+}
+.box:hover .icon_b::after{
+    background-color: #000;
+}
+.box:hover{
+    transition: all 1s ease;
+    background-color: #ffc107;
+}
+
 @media only screen and (max-width:768px) {
     .banner_ {
         opacity: .4;

@@ -13,10 +13,10 @@ const Biography = () => {
         <div className="circular_profile flex justify-center sm:justify-center px-16 items-center h-auto w-full md:w-2/5 mx-auto">
           <div
             data-aos="fade-up"
-            className="circular_avatar text-center relative  w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] border-[5px] border-orange-500 rounded-full md:w-[350px] md:h-[350px] flex flex-col"
+            className="circular_avatar text-center relative  w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] border-[5px] border-orange-500 rounded-full md:w-[350px] md:h-[350px] bg-red-500 flex flex-col"
           >
             <img
-              className=" bg-cover object-cover rounded-full min-w-full"
+              className=" bg-cover object-cover rounded-full bg-red-500 min-w-full"
               src={"https://avatars.githubusercontent.com/u/60726548?v=4"}
               alt="home"
             />
@@ -103,20 +103,61 @@ const Biography = () => {
           </div>
         </div>
       </div>
-      <div className="what-id-do mt-52 w-full px-8 sm:px-20 mx-auto">
+      <div className="what-id-do mt-20 w-full px-8 sm:px-20 mx-auto">
         <div className="title">
           <h1 className="text-2xl font-black">WHAT I DO?</h1>
         </div>
-        <div className="boxes flex flex-wrap justify-center sm:justify-center md:justify-center lg:justify-start mt-16 items-center gap-7">
+        <div className="boxes flex flex-wrap justify-center sm:justify-center md:justify-center lg:justify-start mt-16 items-center gap-5">
           <div
             data-aos="fade-right"
             data-aos-duration="500"
             className={` ${
               darktheme ? "bg-black" : "bg-gray-200 shadow"
-            } box rounded-2xl h-[300px] w-[350px] sm:h-[250px] sm:w-[350px]`}
+            } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
           >
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid text-white fa-laptop text-4xl"></i>
+            </div>
             <div className="info px-8">
-              <h5 className="text-xl font-black">Web Design</h5>
+              <h5 className="text-xl font-black">Website Development</h5>
+              <p className="text-sm mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className={` ${
+              darktheme
+                ? "bg-black text-white"
+                : "bg-gray-200 text-black shadow"
+            } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
+          >
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid fa-mobile text-4xl"></i>
+            </div>
+            <div className="info px-8">
+              <h5 className="text-xl font-black">Mobile App</h5>
+              <p className="text-sm mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            className={` ${
+              darktheme ? "bg-black" : "bg-gray-200 shadow"
+            } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
+          >
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid fa-laptop text-4xl"></i>
+            </div>
+            <div className="info px-8">
+              <h5 className="text-xl font-black">UI/UX</h5>
               <p className="text-sm mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
