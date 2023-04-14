@@ -130,10 +130,12 @@ const Biography = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             className={` ${
-              darktheme ? "bg-black text-white" : "bg-gray-200 text-black shadow"
+              darktheme
+                ? "bg-black text-white"
+                : "bg-gray-200 text-black shadow"
             } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
           >
-              <div className="icon_b h-[100px] w-[100px]">
+            <div className="icon_b h-[100px] w-[100px]">
               <i className="fa-solid fa-mobile text-4xl"></i>
             </div>
             <div className="info px-8">
@@ -151,7 +153,7 @@ const Biography = () => {
               darktheme ? "bg-black" : "bg-gray-200 shadow"
             } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
           >
-              <div className="icon_b h-[100px] w-[100px]">
+            <div className="icon_b h-[100px] w-[100px]">
               <i className="fa-solid fa-laptop text-4xl"></i>
             </div>
             <div className="info px-8">
