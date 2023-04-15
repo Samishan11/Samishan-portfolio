@@ -14,9 +14,9 @@ const Home = () => {
       </div>
       <div className="pages w-full">
         <Introduction />
-        {/* <Biography />
+        <Biography />
         <Education />
-        <Gallery /> */}
+        {/* <Gallery /> */}
       </div>
     </div>
   )
