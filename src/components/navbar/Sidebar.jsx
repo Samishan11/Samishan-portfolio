@@ -50,7 +50,7 @@ const Sidebar = () => {
             !darktheme ? "border-gray-600" : "border-gray-100"
           }`}
         >
-          <a href="#education">
+          <a href="#edu">
             <i class="fa-solid fa-file"></i>
           </a>
         </li>
