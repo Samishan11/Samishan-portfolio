@@ -12,7 +12,7 @@ const Education = () => {
         <div className="edu_title">
           <h1 className="text-2xl font-black">Education and Skills</h1>
         </div>
-        {/* <div className="edu_sec flex flex-wrap">
+        <div className="edu_sec flex flex-wrap">
           <div data-aos="fade-up" data-aos-duration="500" className="edu w-full sm:w-2/5">
             <div className={`box_edu mb-10 sm:mb-0  mt-16 ${ darktheme ? "bg-gray-900" : "bg-gray-100"} rounded-xl`}>
               <div className="edu_deg px-10 pt-5">
@@ -34,7 +34,7 @@ const Education = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="700" className="box_skill px-10 w-full sm:w-3/5  items-center justify-center">
+          {/* <div data-aos="fade-up" data-aos-duration="700" className="box_skill px-10 w-full sm:w-3/5  items-center justify-center">
               <div className="progress">
                 <span>HTML</span>
                 <ProgressBar
@@ -110,8 +110,8 @@ const Education = () => {
                   trackBorderColor="grey"
                 />
               </div>
-            </div>
-        </div> */}
+            </div> */}
+        </div>
       </div>
     </div>
   );
