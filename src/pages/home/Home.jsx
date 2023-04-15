@@ -15,7 +15,7 @@ const Home = () => {
       <div className="pages w-full">
         <Introduction />
         <Biography />
-        <Education />
+        {/* <Education /> */}
         {/* <Gallery /> */}
       </div>
     </div>
