@@ -15,7 +15,7 @@ const Education = () => {
         </div>
         <div className="edu_sec flex flex-wrap">
           <div data-aos="fade-up" data-aos-duration="500" className="edu w-full sm:w-2/5">
-            <div className={`box_edu mb-10 sm:mb-0 w-[320px] h-[350px] sm:h-[350px] sm:w-[400px] mt-16 ${ darktheme ? "bg-gray-900" : "bg-gray-100"} rounded-xl`}>
+            <div className={`box_edu mb-10 sm:mb-0  mt-16 ${ darktheme ? "bg-gray-900" : "bg-gray-100"} rounded-xl`}>
               <div className="edu_deg px-10 pt-5">
                 <p>2003-2016</p>
                 <p className="font-bold">Primary School</p>
@@ -40,7 +40,7 @@ const Education = () => {
                 <span>HTML</span>
                 <ProgressBar
                   width="100%"
-                  height="13px"
+                  height="12px"
                   rect
                   fontColor="gray"
                   percentage="95"
@@ -55,7 +55,7 @@ const Education = () => {
                 <span>CSS</span>
                 <ProgressBar
                   width="100%"
-                  height="13px"
+                  height="12px"
                   rect
                   fontColor="gray"
                   percentage="70"
@@ -70,7 +70,7 @@ const Education = () => {
                 <span>JAVASCRIPT</span>
                 <ProgressBar
                   width="100%"
-                  height="13px"
+                  height="12px"
                   rect
                   fontColor="gray"
                   percentage="85"
@@ -85,7 +85,7 @@ const Education = () => {
                 <span>REACT JS</span>
                 <ProgressBar
                    width="100%"
-                   height="13px"
+                   height="12px"
                   rect
                   fontColor="gray"
                   percentage="70"
@@ -100,7 +100,7 @@ const Education = () => {
                 <span>NODE JS</span>
                 <ProgressBar
                   width="100%"
-                  height="13px"
+                  height="12px"
                   rect
                   fontColor="gray"
                   percentage="60"

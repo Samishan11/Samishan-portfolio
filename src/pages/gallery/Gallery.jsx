@@ -3,6 +3,8 @@ import ResponsiveGallery from "react-responsive-gallery";
 import { ThemeContext } from "../../context/themeContext";
 import { useContext } from "react";
 const Gallery = () => {
+  const { darktheme, setDarkTheme } = useContext(ThemeContext);
+
   const images = [
     {
       src: "https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg",
@@ -34,10 +36,13 @@ const Gallery = () => {
     {
       src: "https://cdn.pixabay.com/photo/2019/03/09/17/30/horse-4044547_960_720.jpg",
     },
+    {
+      src: "https://cdn.pixabay.com/photo/2023/04/06/01/44/man-7902570_640.jpg",
+    }
   ];
 
   return (
-    <div className={`gallery px-8 py-16 sm:px-20 mx-auto bg-gray-900`}>
+    <div className={`gallery px-8 py-16 sm:px-20 mx-auto ${darktheme ? 'bg-gray-900' : "bg-white"}`}>
       <div className="edu_title">
         <h1 className="text-2xl font-black">My Portfolio</h1>
       </div>

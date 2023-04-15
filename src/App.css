@@ -27,6 +27,13 @@
     transition: all 1s ease;
 }
 
+.icon_b i {
+    position: absolute;
+    left: 22px;
+    z-index: 99;
+    top: 25px;
+}
+
 .icon_b::after {
     position: absolute;
     width: 120px;
@@ -37,7 +44,6 @@
     left: -25px;
     top: -20px;
     overflow: hidden;
-    /* transition: all 1s ease; */
 }
 
 .box:hover .icon_b::after {
@@ -63,7 +69,8 @@
         width: 100%;
     }
 }
+
 /*  */
 .inner-rect-bar {
-    background-color:#ffc107 !important;
+    background-color: #ffc107 !important;
 }

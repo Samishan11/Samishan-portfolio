@@ -34,10 +34,11 @@ html {
 
 }
 
-.edu_title h1{
+.edu_title h1 {
   position: relative;
- z-index: 1;
+  z-index: 1;
 }
+
 .edu_title h1::after {
   position: absolute;
   content: "";
@@ -52,6 +53,12 @@ html {
   z-index: -1;
 
 }
+
+.box_edu {
+  height: auto;
+  padding-bottom: 30px;
+}
+
 @keyframes animi {
 
   0%,
