@@ -7,7 +7,7 @@ const Education = () => {
   const { darktheme, setDarkTheme } = useContext(ThemeContext);
 
   return (
-    <React.Fragment>
+    <div>
       <div id="edu" className="education px-8 py-16 sm:px-20 mx-auto">
         <div className="edu_title">
           <h1 className="text-2xl font-black">Education and Skills</h1>
@@ -113,7 +113,7 @@ const Education = () => {
             </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
