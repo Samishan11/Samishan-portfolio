@@ -63,3 +63,7 @@
         width: 100%;
     }
 }
+/*  */
+.inner-rect-bar {
+    background-color:#ffc107 !important;
+}

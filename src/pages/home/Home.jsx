@@ -4,6 +4,7 @@ import Biography from "../boi/Biography";
 import Introduction from "../intro/Introduction";
 import { ThemeContext } from "../../context/themeContext";
 import Education from "../education/Education";
+import Gallery from "../gallery/Gallery";
 const Home = () => {
   const {darktheme, setDarkTheme} = useContext(ThemeContext);
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Introduction />
         <Biography />
         <Education />
+        <Gallery />
       </div>
     </div>
   )
