@@ -75,9 +75,9 @@ const Education = () => {
             <div className="progress_bar mt-5">
               <span>CSS</span>
               <ProgressBarLine
-                value={90}
+                value={80}
                 min={0}
-                max={80}
+                max={100}
                 strokeWidth={1}
                 trailWidth={1}
                 styles={{
