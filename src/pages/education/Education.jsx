@@ -41,13 +41,6 @@ const Education = () => {
                   width="100%"
                   height="12px"
                   rect
-                  fontColor="gray"
-                  percentage="95"
-                  rectPadding="1px"
-                  rectBorderRadius="20px"
-                  trackPathColor="transparent"
-                  bgColor="#ffc107"
-                  trackBorderColor="grey"
                 />
               </div>
               {/* <div className="progress">
