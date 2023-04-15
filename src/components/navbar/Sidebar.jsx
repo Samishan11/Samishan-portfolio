@@ -26,10 +26,10 @@ const Sidebar = () => {
           <a href={'#biography'}><i className={`fa-solid fa-user ${window.document.getElementById("biography") === targetElevemt && 'text-orange-500'}`}></i></a>
         </li>
         <li className={`py-5 border-b-[.5px]  ${!darktheme ?'border-gray-600':'border-gray-100'}`}>
-          <Link><i class="fa-solid fa-file"></i></Link>
+          <a href="#education"><i class="fa-solid fa-file"></i></a>
         </li>
         <li className={`py-5 border-b-[.5px]  ${!darktheme ?'border-gray-600':'border-gray-100'}`}>
-          <Link><i class="fa-solid fa-briefcase"></i></Link>
+          <a href={"#portfolio"}><i class="fa-solid fa-briefcase"></i></a>
         </li>
         <li className={`py-5 border-b-[.5px]  ${!darktheme ?'border-gray-600':'border-gray-100'}`}>
           <Link><i className="fa-solid fa-blog"></i></Link>

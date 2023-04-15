@@ -9,7 +9,7 @@ const Education = () => {
 
   return (
     <React.Fragment>
-      <div className="education px-8 py-16 sm:px-20 mx-auto">
+      <div id="education" className="education px-8 py-16 sm:px-20 mx-auto">
         <div className="edu_title">
           <h1 className="text-2xl font-black">Education and Skills</h1>
         </div>

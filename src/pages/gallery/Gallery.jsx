@@ -42,7 +42,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className={`gallery px-8 py-16 sm:px-20 mx-auto ${darktheme ? 'bg-gray-900' : "bg-white"}`}>
+    <div id="portfolio" className={`gallery px-8 py-16 sm:px-20 mx-auto ${darktheme ? 'bg-gray-900' : "bg-white"}`}>
       <div className="edu_title">
         <h1 className="text-2xl font-black">My Portfolio</h1>
       </div>
