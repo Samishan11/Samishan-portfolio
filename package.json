@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ramonak/react-progress-bar": "^5.0.3",
     "@types/three": "^0.150.1",
     "aos": "^2.3.4",
     "cursor-dot": "^1.0.5",
