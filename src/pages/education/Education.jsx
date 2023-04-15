@@ -34,8 +34,8 @@ const Education = () => {
               </div>
             </div>
           </div>
-          {/* <div data-aos="fade-up" data-aos-duration="700" className="box_skill px-10 w-full sm:w-3/5  items-center justify-center">
-              <div className="progress">
+          <div data-aos="fade-up" data-aos-duration="700" className="box_skill px-10 w-full sm:w-3/5  items-center justify-center">
+              <div className="progress_bar">
                 <span>HTML</span>
                 <ProgressBar
                   width="100%"
@@ -50,7 +50,7 @@ const Education = () => {
                   trackBorderColor="grey"
                 />
               </div>
-              <div className="progress">
+              {/* <div className="progress">
                 <span>CSS</span>
                 <ProgressBar
                   width="100%"
@@ -109,8 +109,8 @@ const Education = () => {
                   bgColor="#ffc107"
                   trackBorderColor="grey"
                 />
-              </div>
-            </div> */}
+              </div> */}
+            </div>
         </div>
       </div>
     </div>
