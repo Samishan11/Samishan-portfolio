@@ -1,9 +1,15 @@
+.intro {
+    position: relative;
+    z-index: 99;
+}
+
 .banner_ {
+    z-index: 1;
     position: absolute;
     right: 0;
     top: 0;
     background: url('https://res.cloudinary.com/dak3widz1/image/upload/v1681568072/Untitled_design_rvxuuq.svg');
-    background-position: 0 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
