@@ -2,7 +2,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    background: url('../src/assets//home-banner.png');
+    background: url('https://res.cloudinary.com/dak3widz1/image/upload/v1681568072/Untitled_design_rvxuuq.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +12,10 @@
 
 #introduction {
     height: 100vh;
+}
+
+.box {
+    transition: all 1s ease;
 }
 
 .icon_b {
@@ -25,6 +29,10 @@
 .icon_b i {
     position: relative;
     z-index: 2;
+    position: absolute;
+    left: 22px;
+    z-index: 99;
+    top: 25px;
 }
 
 .icon_b::after {
@@ -34,6 +42,11 @@
     content: "";
     /* border-radius: 50%; */
     background-color: #eebb13;
+    width: 120px;
+    height: 120px;
+    content: "";
+    border-radius: 50%;
+    background-color: #ffc107;
     left: -25px;
     top: -20px;
     z-index: 1;
@@ -64,5 +77,24 @@
     .circular_avatar {
         height: 100%;
         width: 100%;
+    }
+}
+
+/*  */
+.inner-rect-bar {
+    background-color: #ffc107 !important;
+}
+
+.sc-gueYoa:nth-child(2) {
+    animation: progress-bar 2s linear;
+}
+
+@keyframes progress-bar {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }

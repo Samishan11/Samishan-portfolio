@@ -3,6 +3,8 @@ import Sidebar from "../../components/navbar/Sidebar";
 import Biography from "../boi/Biography";
 import Introduction from "../intro/Introduction";
 import { ThemeContext } from "../../context/themeContext";
+import Education from "../education/Education";
+import Gallery from "../gallery/Gallery";
 const Home = () => {
   const {darktheme, setDarkTheme} = useContext(ThemeContext);
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <div className="pages w-full">
         <Introduction />
         <Biography />
+        <Education />
+        <Gallery />
       </div>
     </div>
   )

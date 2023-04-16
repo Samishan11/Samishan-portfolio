@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import CustomCursor from "custom-cursor-react";
-import curDot from 'cursor-dot'
 import "custom-cursor-react/dist/index.css";
 function App() {
   return (

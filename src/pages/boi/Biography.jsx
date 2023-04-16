@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
-const Biography = () => {
+
+const Work = () => {
   const { darktheme, setDarkTheme } = useContext(ThemeContext);
   return (
     <div
@@ -115,11 +116,49 @@ const Biography = () => {
               darktheme ? "bg-black" : "bg-gray-200 shadow"
             } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
           >
-            <div className="icon_b">
-              <i className="fa-solid p-7 text-white fa-laptop text-4xl"></i>
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid text-white fa-laptop text-4xl"></i>
             </div>
             <div className="info px-8">
               <h5 className="text-xl font-black">Website Development</h5>
+              <p className="text-sm mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className={` ${
+              darktheme
+                ? "bg-black text-white"
+                : "bg-gray-200 text-black shadow"
+            } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
+          >
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid fa-mobile text-4xl"></i>
+            </div>
+            <div className="info px-8">
+              <h5 className="text-xl font-black">Mobile App</h5>
+              <p className="text-sm mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            className={` ${
+              darktheme ? "bg-black" : "bg-gray-200 shadow"
+            } box rounded-2xl h-[300px] w-full sm:h-[300px] sm:w-[412px]`}
+          >
+            <div className="icon_b h-[100px] w-[100px]">
+              <i className="fa-solid fa-laptop text-4xl"></i>
+            </div>
+            <div className="info px-8">
+              <h5 className="text-xl font-black">UI/UX</h5>
               <p className="text-sm mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.

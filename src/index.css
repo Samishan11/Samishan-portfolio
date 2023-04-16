@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #000;
 }
 
 .what-id-do .title {
@@ -32,6 +33,31 @@ html {
   opacity: .6;
   animation: animi 3s linear infinite;
 
+}
+
+.edu_title h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.edu_title h1::after {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background: #ffc107;
+  border-radius: 50%;
+  top: 0;
+  left: -10px;
+  opacity: 1;
+  animation: animi 3s linear infinite;
+  z-index: -1;
+
+}
+
+.box_edu {
+  height: auto;
+  padding-bottom: 30px;
 }
 
 @keyframes animi {

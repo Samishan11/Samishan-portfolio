@@ -9,16 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/three": "^0.150.1",
     "aos": "^2.3.4",
     "cursor-dot": "^1.0.5",
     "custom-cursor-react": "^1.0.5",
     "framer-motion": "^10.9.1",
     "react": "^18.2.0",
+    "react-animated-progress-bar": "^1.1.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-intersection-observer": "^9.4.3",
+    "react-progressbar-line": "^1.0.2",
+    "react-responsive-gallery": "^3.0.3",
     "react-router-dom": "^6.9.0",
-    "react-scroll-motion": "^0.3.2"
+    "react-scroll-motion": "^0.3.2",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.151.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
