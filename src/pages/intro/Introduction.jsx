@@ -25,7 +25,7 @@ const Introduction = () => {
         </div>
       </div>
       <div className={`w-full md:mx-auto mt-10 h-auto`}>
-        <div className="intro md:mx-auto w-full px-16">
+        <div className="intro md:mx-auto w-full px-6 sm:px-16">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
