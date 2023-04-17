@@ -60,6 +60,12 @@
     transition: .5s ease-in-out
 }
 
+@media screen and (max-width:450px) {
+    .icons {
+        display: none !important;
+    }
+}
+
 .box:hover .icon_b::after {
     background-color: #000;
     color: #fff;
