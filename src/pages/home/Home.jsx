@@ -7,26 +7,25 @@ import Education from "../education/Education";
 import Gallery from "../gallery/Gallery";
 const Home = () => {
   const { darktheme, setDarkTheme } = useContext(ThemeContext);
-  const [click ,setClick] = useState(false)
+  const [click, setClick] = useState(false);
   const toggleMenu = () => {
     setClick(!click)
-  }
+    const menuBtn = document.querySelector('.menu-btn');
+    if(click){
+      menuBtn.classList.add('open');
+    }else{
+      menuBtn.classList.remove('open');
+    }
+  };
+  console.log(click)
   return (
     <div
       className={` ${
         darktheme ? "bg-black text-white " : "bg-white text-black "
       } flex`}
     >
-      <div className="sidenav hidden md:block md:w-[80px]">
-        {/* <Sidebar /> */}
-        <div
-            className="HAMBURGER-ICON space-y-2 mt-2"
-          >
-            <span className="block h-1 w-8 bg-white"></span>
-            <span className="block h-1 w-8 bg-white"></span>
-            <span className="block h-1 w-8 bg-white"></span>
-          </div>
-
+      <div onClick={toggleMenu} class="menu-btn">
+        <div class="menu-btn__burger"></div>
       </div>
       <div className="pages w-full">
         <Introduction />
