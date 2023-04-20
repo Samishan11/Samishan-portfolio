@@ -7,6 +7,7 @@ const Sidebar = () => {
 
   return (
     <div
+    id="sideBar"
       className={` ${
         darktheme
           ? "bg-gray-900 border-gray-100 text-white"

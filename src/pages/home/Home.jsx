@@ -24,6 +24,7 @@ const Home = () => {
         darktheme ? "bg-black text-white " : "bg-white text-black "
       } flex`}
     >
+      <Sidebar />
       <div onClick={toggleMenu} class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
