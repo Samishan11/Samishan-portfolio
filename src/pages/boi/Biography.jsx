@@ -40,7 +40,7 @@ const Biosection = () => {
       <div
         data-aos="fade-up"
         data-aos-delay="200"
-        className="about text-left mt-16 sm:mt-36 w-4/5 mx-auto md:w-2/4 pr-10"
+        className="about text-left mt-16 sm:mt-36 w-full px-4 md:w-2/4 sm:pr-10"
       >
         <h1 className="text-3xl  font-black mb-5">Biography</h1>
         <span className=" text-md md:text-[14px]">
@@ -102,7 +102,7 @@ const Biosection = () => {
 const Work = () => {
   const { darktheme, setDarkTheme } = useContext(ThemeContext);
   return (
-    <div className="what-id-do mt-32 w-full px-8 sm:px-20 mx-auto">
+    <div className="what-id-do mt-32 w-full px-4 sm:px-20 mx-auto">
       <div className="title">
         <h1 className="text-2xl font-black">WHAT I DO?</h1>
       </div>

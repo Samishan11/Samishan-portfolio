@@ -25,7 +25,7 @@ const Introduction = () => {
         </div>
       </div>
       <div className={`w-full md:mx-auto mt-10 h-auto`}>
-        <div className="intro md:mx-auto w-full px-6 sm:px-16">
+        <div className="intro md:mx-auto w-full  sm:px-16">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -46,7 +46,7 @@ const Introduction = () => {
                 Software Developer
               </span>
             </div>
-            <p className=" max-w-md mb-5">
+            <p className="max-w-md mb-5">
               I design and develop services for customers of all sizes,
               specializing in creating stylish, modern websites, web services
               and online stores.
