@@ -10,7 +10,7 @@ const Education = () => {
 
   return (
     <div>
-      <div id="edu" className="education px-8 py-24 sm:px-20 mx-auto">
+      <div id="edu" className="education px-4 py-24 sm:px-20 mx-auto">
         <div className="edu_title">
           <h1 className="text-2xl font-black">Education and Skills</h1>
         </div>
@@ -47,7 +47,7 @@ const Education = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="700"
-            className="box_skill px-10 w-full sm:w-3/5  items-center justify-center"
+            className="box_skill px-4 w-full sm:w-3/5  items-center justify-center"
           >
             <div className="progress_bar">
               <span>HTML</span>

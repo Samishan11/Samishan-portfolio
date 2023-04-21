@@ -44,7 +44,7 @@ const Gallery = () => {
   return (
     <div
       id="portfolio"
-      className={`gallery px-8 py-16 sm:px-20 mx-auto ${
+      className={`gallery px-4 py-16 sm:px-20 mx-auto ${
         darktheme ? "bg-gray-900" : "bg-white"
       }`}
     >
