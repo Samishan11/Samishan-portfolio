@@ -15,7 +15,7 @@ function WorkInProgress({ onTimeout }) {
     const timer = setTimeout(() => {
       setVisible(false);
       onTimeout();
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [onTimeout]);
@@ -27,8 +27,9 @@ function WorkInProgress({ onTimeout }) {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       {/* <Spinner size="xl" color="blue.500" /> */}
+      <p className="text-5xl text-white">102</p>
+      <p className="text-white mt-4">Site is under progress...</p>
       <Loading />
-      <p className="text-gray-600 mt-4">Work in progress...</p>
     </div>
   );
 }
