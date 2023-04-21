@@ -38,11 +38,16 @@ const Gallery = () => {
     },
     {
       src: "https://cdn.pixabay.com/photo/2023/04/06/01/44/man-7902570_640.jpg",
-    }
+    },
   ];
 
   return (
-    <div id="portfolio" className={`gallery px-8 py-16 sm:px-20 mx-auto ${darktheme ? 'bg-gray-900' : "bg-white"}`}>
+    <div
+      id="portfolio"
+      className={`gallery px-8 py-16 sm:px-20 mx-auto ${
+        darktheme ? "bg-gray-900" : "bg-white"
+      }`}
+    >
       <div className="edu_title">
         <h1 className="text-2xl font-black">My Portfolio</h1>
       </div>
