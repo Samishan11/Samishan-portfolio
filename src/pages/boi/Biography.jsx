@@ -88,7 +88,6 @@ const Biosection = () => {
             <p className="mt-2">
               <span className="font-semibold">Age:</span>{" "}
               <span className="ml-1 text-gray-400">22</span>{" "}
-              <span className="ml-1 text-gray-400">22</span>{" "}
             </p>
             <p className="mt-2">
               <span className="font-semibold">Address:</span>{" "}
