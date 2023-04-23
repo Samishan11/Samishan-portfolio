@@ -91,7 +91,7 @@ const Biosection = () => {
             </p>
             <p className="mt-2">
               <span className="font-semibold">Address:</span>{" "}
-              <span className="ml-1 text-gray-400">Kathmandu Kathmandu</span>{" "}
+              <span className="ml-1 text-gray-400">Kathmandu</span>{" "}
             </p>
           </div>
         </div>
